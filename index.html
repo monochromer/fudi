@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!--[if lt IE 8]><html class="no-js ie ltie8 ltie9 ltie10" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8 ltie9 ltie10" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie gtie8 ie9 ltie10" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en"><!--><![endif]-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+    .loader {
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transition: .5s;
+    }
+        .loader:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #4A3949;
+            border-width: 2px 2px 0 0;
+            border-radius: 50%;
+            animation: rotate 1s linear infinite;
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+         .mdzr-no-cssanimations .loader:before {
+            content: "Loading...";
+            width: 100%;
+            height: 36px;
+            line-height: 1;
+            font-size: 36px;
+            border: 0;
+            text-align: center;
+            color: #4A3949;
+        }
+
+        .loader-hide {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+
+    <!-- нормализация дефолтных стилей браузеров -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <!-- основные стили -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr.custom.js"></script>
+    <!-- поддержка html5-тегов, css3-селекторов, медиа-запросов в IE<=8 -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <script src="js/nwmatcher-1.2.5.js"></script>
+        <script src="js/selectivizr-min.js"></script>
+    <![endif]-->
+
+    <title>Fudi</title>
+</head>
+<body>
+
+    <div class="loader"></div>
+
+    <header class="header">
+        <div class="container header__inner">
+            <h1 class="header__logo logo">
+                <a class="logo__link" href="#" title="Fudi. Find your favorite recipes">Fudi. Find your favorite recipes</a>
+            </h1>
+            <nav class="header__nav nav">
+                <a class="nav__link" href="#">log in</a>
+                <a class="nav__link" href="#">sign up</a>
+                <a class="h-btn" href="#">
+                    <span class="h-btn__lines">Меню</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+
+    <nav class="menu">
+        <a class="menu__link" href="#">Home</a>
+        <a class="menu__link" href="#">About us</a>
+        <a class="menu__link" href="#">Contacts</a>
+    </nav>
+
+
+    <section class="section hero-section">
+        <div class="container">
+            <h2 class="slogan">Find your Favorite <strong class="slogan__title">recipes</strong></h2>
+            <a class="cta-link" href="#">get started</a>
+            <p class="hero-section__info">or send us your own recipes and <a href="#">get rewarded!</a></p>
+        </div>
+    </section>
+
+
+    <section class="section feature-section">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__cell grid__cell_w_third">
+                    <div class="feature feature_inspired">
+                        <h2 class="feature__title heading">
+                            <span class="heading__text">get inspired</span>
+                        </h2>
+                        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                    </div>
+                </div>
+                <div class="grid__cell grid__cell_w_third">
+                     <div class="feature feature_rewarded">
+                        <h2 class="feature__title heading">
+                            <span class="heading__text">get rewarded</span>
+                        </h2>
+                        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                    </div>
+                </div>
+                <div class="grid__cell grid__cell_w_third">
+                     <div class="feature feature_social">
+                        <h2 class="feature__title heading">
+                            <span class="heading__text">get social</span>
+                        </h2>
+                        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc Pellentesque vel enim a elit viverra elementuma. Aliquam erat volutpat. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section app-section">
+        <div class="container">
+            <div class="grid">
+                <div class="grid__cell grid__cell_w_half">
+                    <img class="app-section__img" src="img/iphone.png" alt="app description">
+                </div>
+                <div class="grid__cell grid__cell_w_half app-section__desc">
+                    <h2 class="heading">
+                        <span class="heading__text">introducing the fudi app</span>
+                    </h2>
+                    <p class="app-section__par">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest ibulum tristique. Suspendisse tristique lacus ac mattis porta. </p>
+                    <p class="app-section__par">Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.</p>
+                    <p class="app-section__par">Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices ante, a mattis massa. </p>
+
+                    <a class="store-link store-link_gp" href="#"></a>
+                    <a class="store-link store-link_as" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="testimonials-slider">
+                <div class="testimonials-slide">
+                    <blockquote class="testimonial">
+                        <img class="testimonial__avatar" src="img/avatar.png" alt="">
+                        <p class="testimonial__text">I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!</p>
+                        <cite class="testimonial__author">Michael Dawson, San Francisco, CA </cite>
+                    </blockquote>
+                </div>
+                <div class="testimonials-slide">
+                    <blockquote class="testimonial">
+                        <img class="testimonial__avatar" src="img/avatar.png" alt="">
+                        <p class="testimonial__text">I am so happy because I found this recipe, and it just made my life easier.</p>
+                        <cite class="testimonial__author">John Doe, New York, NY </cite>
+                    </blockquote>
+                </div>
+                <div class="testimonials-slide">
+                    <blockquote class="testimonial">
+                        <img class="testimonial__avatar" src="img/avatar.png" alt="">
+                        <p class="testimonial__text">I am so happy because I found this recipe, and it just made my life easier. Thanks  so much for sharing!</p>
+                        <cite class="testimonial__author">James Smith, Los Angeles, CA </cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section cuisines-section">
+        <h2 class="heading">
+            <span class="heading__text">BROWSE BY CUISINES</span>
+        </h2>
+
+        <div class="cuisines">
+            <a href="#" class="cuisine">
+                <div class="cuisine__img cuisine__img_italian"></div>
+                <div class="cuisine__count">
+                    <span>327</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">italian</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                <div class="cuisine__img cuisine__img_indian"></div>
+                <div class="cuisine__count">
+                    <span>865</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">indian</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_french"></div>
+                <div class="cuisine__count">
+                    <span>27</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">french</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_steakhouse"></div>
+                <div class="cuisine__count">
+                    <span>174</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">steakhouse</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_seafood"></div>
+                <div class="cuisine__count">
+                    <span>731</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">seafood</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_sushi"></div>
+                <div class="cuisine__count">
+                    <span>343</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">sushi</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                <div class="cuisine__img cuisine__img_mexican"></div>
+                <div class="cuisine__count">
+                    <span>529</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">mexican</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_pizza"></div>
+                <div class="cuisine__count">
+                    <span>145</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">pizza</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_chinese"></div>
+                <div class="cuisine__count">
+                    <span>327</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">chinese</h3>
+            </a><!--
+            --><a href="#" class="cuisine">
+                 <div class="cuisine__img cuisine__img_american"></div>
+                <div class="cuisine__count">
+                    <span>98</span>
+                    recipes
+                </div>
+                <h3 class="cuisine__title">american</h3>
+            </a>
+        </div>
+
+        <ul class="stats">
+            <li class="stat-item">
+                <div class="stat-item__count">23,567</div>
+                <div class="stat-item__cat">Recipes Available</div>
+            </li>
+            <li class="stat-item">
+                <div class="stat-item__count">431,729</div>
+                <div class="stat-item__cat">Active Users</div>
+            </li>
+            <li class="stat-item">
+                <div class="stat-item__count">892,173</div>
+                <div class="stat-item__cat">Positive Reviews </div>
+            </li>
+            <li class="stat-item">
+                <div class="stat-item__count">56,581</div>
+                <div class="stat-item__cat">Photos &amp; Videos</div>
+            </li>
+            <li class="stat-item">
+                <div class="stat-item__count">3,182</div>
+                <div class="stat-item__cat">Spices and Herbs </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <small class="footer__copy">&copy;2014 Fudi. All Rights Reserved.</small>
+            <address  class="footer__author">design by: <a href="#">www.bekades.com</a></address>
+        </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
